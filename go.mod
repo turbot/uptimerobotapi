@@ -1,4 +1,4 @@
-module github.com/exileed/uptimerobotapi
+module github.com/turbot/uptimerobotapi
 
 go 1.15
 
