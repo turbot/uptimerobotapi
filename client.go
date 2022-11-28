@@ -56,6 +56,7 @@ type Client struct {
 	AlertContact AlertContactService
 	Monitor      MonitorService
 	MWindow      MWindowService
+	PSP          PSPService
 }
 
 // NewClient returns a new UptimeRobot API client.
@@ -112,6 +113,7 @@ func newClient(config *ClientConfig) *Client {
 	c.AlertContact = AlertContactService{apiClient: c}
 	c.Monitor = MonitorService{apiClient: c}
 	c.MWindow = MWindowService{apiClient: c}
+	c.PSP = PSPService{apiClient: c}
 	return c
 }
 
